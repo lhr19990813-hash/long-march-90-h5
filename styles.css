@@ -400,6 +400,7 @@ em { color: var(--red); font-style: normal; }
 .material-notice b { color: var(--gold-light); font-size: 12px; letter-spacing: .1em; }
 .material-notice p { margin: 5px 0 0; font-size: 12px; line-height: 1.65; }
 .material-notice strong { color: white; }
+.material-notice.story-note p { margin: 0; color: rgba(255,255,255,.82); font-size: 14px; line-height: 1.75; }
 .profile-stage { margin-top: 34px; }
 .profile-tabs { display: grid; grid-template-columns: repeat(4, 1fr); }
 .profile-tabs button { display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 12px; color: rgba(255,255,255,.58); background: rgba(255,255,255,.035); border: 1px solid rgba(255,255,255,.11); border-right: 0; font-size: 13px; }
