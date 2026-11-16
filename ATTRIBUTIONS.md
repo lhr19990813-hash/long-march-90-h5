@@ -53,11 +53,11 @@
    - 人物：王雪
    - 来源：实践队采访材料
 
-9. `assets/interviews/zhang-longbing.jpeg`
+9. `assets/interviews/zhang-longbing-v2.jpeg`
    - 人物：张龙兵
    - 来源：实践队采访材料
 
-10. `assets/interviews/li-jiaqi.jpeg`
+10. `assets/interviews/li-jiaqi-v2.jpeg`
     - 人物：李佳琪
     - 来源：实践队采访材料
 
