@@ -362,9 +362,26 @@ em { color: var(--red); font-style: normal; }
 .source-inline a:hover { color: white; }
 
 /* 05 */
-.spirit-layout { grid-template-columns: .78fr 1.22fr; }
-.spirit-equation { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 30px; color: #5d584f; font: 700 13px/1.5 "STKaiti", "KaiTi", serif; }
-.spirit-equation i { color: var(--red); font-style: normal; }
+.speech-chapter { background: radial-gradient(circle at 92% 8%, rgba(157,36,29,.11), transparent 30%), var(--paper); }
+.speech-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 28px 48px; align-content: center; min-height: calc(100vh - var(--top) - 100px); }
+.speech-photo { position: relative; align-self: stretch; min-height: 285px; margin: 0; overflow: hidden; background: #7b1814; box-shadow: 0 22px 55px rgba(56,30,19,.19); }
+.speech-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 64%, rgba(25,8,6,.72)); pointer-events: none; }
+.speech-photo img { width: 100%; height: 100%; min-height: 285px; object-fit: cover; object-position: center; }
+.speech-photo figcaption { position: absolute; z-index: 2; right: 16px; bottom: 12px; left: 16px; color: rgba(255,255,255,.78); font-size: 9px; text-align: right; }
+.speech-photo figcaption a:hover { color: white; }
+.speech-photo-mark { position: absolute; z-index: 2; top: 14px; left: 14px; padding: 7px 10px; color: #fff8e8; background: rgba(117,22,17,.88); border: 1px solid rgba(255,255,255,.28); font-size: 10px; letter-spacing: .16em; }
+.speech-heading { align-self: center; }
+.speech-date { display: inline-block; margin: 2px 0 13px; padding: 7px 10px; color: var(--red-deep); background: rgba(157,36,29,.08); border-left: 2px solid var(--red); font: 700 11px/1 Georgia, serif; letter-spacing: .09em; }
+.speech-heading h2 { font-size: clamp(40px, 4.6vw, 68px); }
+.speech-heading .lead { max-width: 650px; margin-top: 16px; font-size: 14px; line-height: 1.8; }
+.speech-tribute { display: grid; grid-template-columns: auto 1fr; gap: 13px; margin-top: 16px; padding: 13px 15px; color: #5f574c; background: rgba(255,255,255,.48); border: 1px solid var(--line); }
+.speech-tribute b { color: var(--red); font: 700 12px/1.6 "STKaiti", "KaiTi", serif; white-space: nowrap; }
+.speech-tribute p { margin: 0; font-size: 11px; line-height: 1.7; }
+.speech-lower { grid-column: 1 / -1; display: grid; grid-template-columns: 1.05fr .95fr; gap: 42px; }
+.speech-subhead { display: flex; align-items: center; gap: 12px; min-height: 48px; margin-bottom: 6px; }
+.speech-subhead > span { color: var(--red); font: 26px/1 Georgia, serif; }
+.speech-subhead b { display: block; color: var(--ink); font: 700 17px/1.2 "STKaiti", "KaiTi", serif; }
+.speech-subhead small { color: #8a8174; font-size: 9px; letter-spacing: .08em; }
 .accordion { border-top: 1px solid var(--line); }
 .accordion article { border-bottom: 1px solid var(--line); }
 .accordion article button { display: grid; grid-template-columns: 42px 1fr 30px; align-items: center; width: 100%; min-height: 64px; padding: 0 8px; color: var(--ink); background: transparent; border: 0; text-align: left; }
@@ -378,6 +395,21 @@ em { color: var(--red); font-style: normal; }
 .accordion article.open > div { grid-template-rows: 1fr; }
 .accordion article.open > div p { padding: 0 50px 20px; }
 .accordion-source { margin: 14px 0 0; color: #82796c; font-size: 10px; }
+.speech-accordion article button { min-height: 46px; grid-template-columns: 34px 1fr 24px; }
+.speech-accordion article button b { font-size: 15px; }
+.speech-accordion article > div p { font-size: 11px; line-height: 1.65; }
+.speech-accordion article.open > div p { padding: 0 42px 12px; }
+.spirit-panel { padding-left: 36px; border-left: 1px solid var(--line); }
+.spirit-points { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.spirit-points li { display: flex; gap: 9px; min-height: 50px; padding: 9px 10px; background: rgba(255,255,255,.42); border: 1px solid rgba(109,87,63,.12); }
+.spirit-points li:last-child { grid-column: 1 / -1; }
+.spirit-points i { color: var(--red); font: normal 10px/1.5 Georgia, serif; }
+.spirit-points p { margin: 0; }
+.spirit-points b, .spirit-points span { display: block; }
+.spirit-points b { color: #433b32; font: 700 12px/1.4 "STKaiti", "KaiTi", serif; }
+.spirit-points span { margin-top: 2px; color: #857b6e; font-size: 9px; line-height: 1.4; }
+.speech-source { display: inline-block; margin-top: 9px; color: var(--red); font-size: 10px; font-weight: 700; text-decoration: none; }
+.speech-source:hover { text-decoration: underline; }
 
 /* 06 */
 .tianjin-section { display: flex; align-items: center; color: white; }
@@ -562,8 +594,9 @@ em { color: var(--red); font-style: normal; }
   .numbers-grid { grid-template-columns: repeat(2, 1fr); }
   .number-card { min-height: 170px; }
   .number-card b { margin-top: 24px; }
-  .spirit-layout { grid-template-columns: 1fr; }
-  .accordion { margin-top: 30px; }
+  .speech-layout { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .speech-lower { gap: 24px; }
+  .spirit-panel { padding-left: 24px; }
   .local-stats { margin-top: 26px; }
   .public-head { align-items: flex-start; }
   .profile-card { grid-template-columns: 66px 1fr; }
@@ -586,6 +619,15 @@ em { color: var(--red); font-style: normal; }
   .hero blockquote { font-size: 12px; }
   .image-credit { right: 14px; bottom: 52px; max-width: 80vw; font-size: 8px; text-align: right; }
   .split-layout { gap: 18px; }
+  .speech-layout { grid-template-columns: 1fr; gap: 18px; }
+  .speech-photo { min-height: 240px; }
+  .speech-photo img { min-height: 240px; }
+  .speech-heading h2 { font-size: clamp(38px, 11vw, 58px); }
+  .speech-tribute { grid-template-columns: 1fr; gap: 5px; }
+  .speech-lower { grid-column: auto; grid-template-columns: 1fr; gap: 28px; }
+  .spirit-panel { padding-left: 0; border-left: 0; }
+  .spirit-points { grid-template-columns: 1fr; }
+  .spirit-points li:last-child { grid-column: auto; }
   .timeline-tabs button b { display: none; }
   .timeline-card { grid-template-columns: 45px 1fr; min-height: 136px; padding: 20px 16px; }
   .timeline-index { font-size: 38px; }
