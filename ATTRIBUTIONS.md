@@ -1,6 +1,6 @@
 # 图片来源与许可
 
-本项目未使用 AI 生成图片。图片均取自 Wikimedia Commons，并保留来源链接与许可信息。
+本项目未使用 AI 生成图片。历史、场馆与城市图片取自 Wikimedia Commons，并保留来源链接与许可信息；第10页人物照片由实践队采访材料提供。
 
 1. `liupanshan-memorial.jpg`
    - 作品：Liupanshan Red Army Long March Memorial Hall (20260201154058).jpg
@@ -42,6 +42,24 @@
    - 许可：CC BY-SA 4.0
    - 来源：https://commons.wikimedia.org/wiki/File:%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80.jpg
    - 说明：当前版本保留为备用素材，网页正文未直接显示。
+
+## 实践队采访照片
+
+7. `assets/interviews/li-wenxuan.jpeg`
+   - 人物：李汶轩
+   - 来源：实践队采访材料
+
+8. `assets/interviews/wang-xue.jpeg`
+   - 人物：王雪
+   - 来源：实践队采访材料
+
+9. `assets/interviews/research-party-member.jpeg`
+   - 人物：科研党员（原材料未提供姓名）
+   - 来源：实践队采访材料
+
+10. `assets/interviews/li-jiaqi.jpeg`
+    - 人物：李佳琪
+    - 来源：实践队采访材料
 
 许可文本：
 - CC BY-SA 4.0：https://creativecommons.org/licenses/by-sa/4.0/

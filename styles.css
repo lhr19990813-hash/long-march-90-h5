@@ -455,7 +455,7 @@ em { color: var(--red); font-style: normal; }
 .interview-section { color: white; background: radial-gradient(circle at 88% 18%, rgba(213,72,52,.18), transparent 30%), #261b18; }
 .interview-warning { max-width: 430px; padding: 15px 18px; color: rgba(255,255,255,.68); background: rgba(255,255,255,.055); border: 1px dashed rgba(241,214,155,.45); }
 .interview-warning b { color: var(--gold-light); font-size: 12px; }
-.interview-warning p { margin: 5px 0 8px; font-size: 11px; line-height: 1.65; }
+.interview-warning p { margin: 5px 0 0; font-size: 11px; line-height: 1.65; }
 .interview-warning a { color: white; font-size: 11px; font-weight: 800; }
 .interview-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 34px; }
 .interview-card { position: relative; min-height: 390px; padding: 12px; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.14); }
@@ -620,10 +620,10 @@ em { color: var(--red); font-style: normal; }
   .research-cards { grid-template-columns: 1fr; }
   .research-question { grid-column: auto; }
   .research-cards article { min-height: 280px; }
-  .interview-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .interview-card { min-height: 330px; padding: 8px; }
-  .interview-photo { height: 125px; }
-  .interview-fields p { grid-template-columns: 42px 1fr; font-size: 9px; }
+  .interview-grid { grid-template-columns: 1fr; gap: 12px; }
+  .interview-card { min-height: 0; padding: 10px; }
+  .interview-photo { height: 210px; }
+  .interview-fields p { grid-template-columns: 54px 1fr; font-size: 11px; }
   .edit-hint { line-height: 1.6; }
   .action-form { padding: 16px; }
   .action-form > label > span { grid-template-columns: 38px 1fr; }
