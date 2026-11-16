@@ -17,12 +17,14 @@ window.INTERVIEWS = [
     meta: "2026年11月11日 · 25教学楼C区 · 面谈"
   },
   {
-    photo: "assets/interviews/research-party-member.jpeg",
-    name: "科研党员",
+    photo: "assets/interviews/zhang-longbing.jpeg",
+    name: "张龙兵",
     identity: "经管学部2025级博士研究生",
     keyword: "科研攻坚 · 求真务实 · 坚韧不拔 · 科技报国",
     quote: "长征精神对我而言，不只是历史书上的艰苦奋斗，更是在科研学习遇到反复和挫折时，仍愿意沉下心来、把基础工作做好，把个人努力融入集体目标。",
-    meta: "2026年11月10日 · 25教学楼B702 · 线下面对面访谈"
+    meta: "2026年11月10日 · 25教学楼B702 · 线下面对面访谈",
+    cropRatio: 1.418,
+    cropPosition: "center 49.9%"
   },
   {
     photo: "assets/interviews/li-jiaqi.jpeg",
@@ -30,7 +32,9 @@ window.INTERVIEWS = [
     identity: "经管学部2024级博士研究生",
     keyword: "团结协作 · 服务同学 · 主动补位 · 集体担当",
     quote: "长征的胜利离不开军民同心、团结互助。对学生党员来说，传承这种精神，就是在同学需要时主动补位、彼此支持，把集体的事当作自己的事。",
-    meta: "2026年11月10日 · 25教学楼B702 · 线下面对面访谈"
+    meta: "2026年11月10日 · 25教学楼B702 · 线下面对面访谈",
+    cropRatio: 1.489,
+    cropPosition: "center 49.1%"
   }
 ];
 

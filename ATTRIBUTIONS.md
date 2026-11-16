@@ -53,8 +53,8 @@
    - 人物：王雪
    - 来源：实践队采访材料
 
-9. `assets/interviews/research-party-member.jpeg`
-   - 人物：科研党员（原材料未提供姓名）
+9. `assets/interviews/zhang-longbing.jpeg`
+   - 人物：张龙兵
    - 来源：实践队采访材料
 
 10. `assets/interviews/li-jiaqi.jpeg`

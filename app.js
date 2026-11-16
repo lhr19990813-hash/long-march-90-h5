@@ -195,11 +195,18 @@
   while (interviews.length < 4) interviews.push({});
   interviewGrid.innerHTML = interviews.map((interview, index) => {
     const hasPhoto = Boolean(interview.photo);
+    const cropRatio = Number(interview.cropRatio);
+    const photoFrameStyle = Number.isFinite(cropRatio) && cropRatio > 0
+      ? ` style="height:auto;aspect-ratio:${cropRatio}"`
+      : "";
+    const photoPositionStyle = interview.cropPosition
+      ? ` style="object-position:${escapeHTML(interview.cropPosition)}"`
+      : "";
     const photo = hasPhoto
-      ? `<img src="${escapeHTML(interview.photo)}" alt="${escapeHTML(interview.name || `第${index + 1}位受访者`)}">`
+      ? `<img src="${escapeHTML(interview.photo)}" alt="${escapeHTML(interview.name || `第${index + 1}位受访者`)}"${photoPositionStyle}>`
       : `<div class="photo-placeholder"><b>${String(index + 1).padStart(2, "0")}</b><span>人物照片</span></div>`;
     return `<article class="interview-card">
-      <div class="interview-photo">${photo}</div>
+      <div class="interview-photo"${photoFrameStyle}>${photo}</div>
       <div class="interview-fields">
         <p><span>姓名</span><b>${escapeHTML(interview.name || "【待补充】")}</b></p>
         <p><span>身份</span><b>${escapeHTML(interview.identity || "【待补充】")}</b></p>
